@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2>JavaScript Hipotenüs Hesaplama</h2>
+    <input placeholder="1. Kenarı girrin" type="text" id="txtKenar1">
+    <input placeholder="2. Kenarı girrin" type="text" id="txtKenar2">
+    <button id="btn">HESAPLAMA</button>
+    <div id="sonuc"></div>
+
+
+    <script>
+        function Hesaplama() {
+            var k1 = Number(document.getElementById("txtKenar1").value);
+            var k2 = Number(document.getElementById("txtKenar2").value);
+            var Hipotenus = Math.sqrt((k1 * k1) + (k2 * k2));
+            document.getElementById("sonuc").innerHTML = "Hipotenüs: " + Hipotenus;
+            "<br>";
+        }
+
+        var hesapBtn = document.getElementById("btn");
+        hesapBtn.onclick = Hesaplama;
+    </script>
+
+</body>
+
+</html>
