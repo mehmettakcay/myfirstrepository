@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: #e74c3c;
+    border: none;
+    color: #fff;
+    border-radius: 200px;
+}
+
+button:hover {
+    background: #95a5a6;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button:disabled {
+    background: #95a5a6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#durum {
+    font-size: 3em;
+}
