@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="arkaplan rengı degıstırme.css" />
+
+<body>
+    <div class="a">
+        <input type="button" id="renk" onmouseover="changeColor()" onmouseout="dontchange()" value="renk değiştir" />
+    </div>
+
+    <script>
+        var renk = document.getElementById("renk");
+        var dizi = [
+            "#D24D57",
+            "#e74c3c",
+            "#f1c40f",
+            "#2c3e50",
+            "#8e44ad",
+            "#bdc3c7",
+            "#1abc9c",
+            "#3498db",
+            "#95a5a6",
+            "#F0F8FF",
+            "#D24D57",
+            "#e74c3c",
+            "#f1c40f",
+            "#2c3e50",
+            "#8e44ad",
+            "#bdc3c7",
+            "#1abc9c",
+            "#3498db",
+            "#95a5a6",
+            "#F0F8FF",
+            "#D24D57",
+            "#e74c3c",
+            "#f1c40f",
+            "#2c3e50",
+            "#8e44ad",
+            "#bdc3c7",
+            "#1abc9c",
+            "#3498db",
+            "#95a5a6",
+            "#F0F8FF",
+            "#D24D57",
+            "#e74c3c",
+            "#f1c40f",
+            "#2c3e50",
+            "#8e44ad",
+            "#bdc3c7",
+            "#1abc9c",
+            "#3498db",
+            "#95a5a6",
+            "#F0F8FF",
+        ];
+
+        var a = 1;
+
+        function changeColor() {
+            a = 1;
+            setInterval(function() {
+                if (a == 1) {
+                    var rastgele = Math.floor(Math.random() * dizi.length);
+                    document.body.style.backgroundColor = dizi[rastgele];
+                }
+            }, 100);
+        }
+
+        function dontchange() {
+            a = 0;
+        }
+    </script>
+</body>
+
+</html>

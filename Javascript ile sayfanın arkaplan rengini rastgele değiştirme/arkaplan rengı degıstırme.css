@@ -1,0 +1,10 @@
+.a {
+    color: red;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.a:hover {
+    color: blue;
+}
