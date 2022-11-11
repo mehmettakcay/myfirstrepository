@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function onayla() {
+            alert("Mesajınız başarılı sekılde  gönderildi. Sizinlr en yakın zamanla iletısıme gececegız.");
+        }
+
+        function temızle() {
+            return confirm("form temızlesın mı?");
+        }
+    </script>
+
+    <form>
+        <fieldset>
+            <legend>Mesaj Gönder</legend><input type="text"><br><br>
+            <label>rumuzunuz:</label><input type="text"><br><br>
+            <label>e-posta Adresınız:</label><input type="text"><br><br>
+            <label>Dogum Tarihiniz:</label><input type="text"><br><br>
+            <label>mesajınız:</label><textarea cols="18" rows="2"></textarea><br><br>
+            <input type="submit" value="Onayla" onclick="onayla()" /><br><br>
+            <input type="reset" value="Formu Temizle" onclick="return temızle()" />
+
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

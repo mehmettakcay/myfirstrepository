@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr" onclick="zipla()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dinozor Oyunu</title>
+    <link rel="stylesheet" href="JavaScript Dinozor Oyunu.css">
+
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        var saniye = 0,
+            dakika = 0,
+            saat = 0;
+
+        function bak() {
+            if (saniye < 59) saniye = saniye + 1;
+            else {
+                saniye = 0;
+                if (dakika < 59) dakika = dakika + 1;
+                else {
+                    dakika = 0;
+                    saat = saat + 1;
+                }
+            }
+            $("#sure").html(saat + " : " + dakika + " : " + saniye);
+        }
+        $(document).ready(function() {
+            $("#sure").html("0 : 0 : 0");
+            setInterval(bak, 1000);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <div id="oyun">
+        <div id="trex"></div>
+        <div id="kaktus"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="JavaScript Dinozor Oyunu.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <script>
+        var tarih = new Date();
+        var yil = tarih.getFullYear();
+        var ay = tarih.getMonth();
+        var gun = tarih.getDay();
+        var saat = tarih.getHours();
+        var dakika = tarih.getMinutes();
+        var saniye = tarih.getSeconds();
+        var gunler = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+
+        document.write(gun + "/" + ay + "/" + yil + "<br> " + saat + ":" + dakika + ":" + saniye);
+    </script>
+</body>
+
+</html>
